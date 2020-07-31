@@ -4,6 +4,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import './index.css';
 import Home from './pages/Home';
 import CadastroVideo from './pages/cadastro/video'
+import PageNot from './pages/404not'
 import CadastroCategoria from './pages/cadastro/categoria'
 import * as serviceWorker from './serviceWorker';
 
@@ -13,6 +14,7 @@ ReactDOM.render(
       <Route path="/cadastro/categoria" component={CadastroCategoria}/>
       <Route path="/cadastro/video" component={CadastroVideo}/>
       <Route path="/" exact component={Home}/>
+      <Route component={PageNot}/>
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')
