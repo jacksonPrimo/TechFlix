@@ -16,8 +16,8 @@
     "styled-components": "^5.1.1"
   },
   "scripts": {
-    "server": "json-server --watch model/db.json --port 3001",
-    "start": "react-scripts start",
+    "server": "node ./server.js",
+    "start": "npm run ./server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
